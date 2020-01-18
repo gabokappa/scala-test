@@ -92,11 +92,12 @@ class Cons[+A](h: A, t: MyList2[A]) extends MyList2[A] {
     new Cons(transformer.transform(h), t.map(transformer))
 }
 
-trait MyPredicate[-T] {
+// these are basically function types
+trait MyPredicate[-T] { // this is T => Boolean
   def test(elem: T): Boolean
 }
 
-trait MyTransformer[-A, B] {
+trait MyTransformer[-A, B] { // A => B
   def transform(elem: A): B
 }
 

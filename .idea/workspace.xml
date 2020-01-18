@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1f0c67e-23db-43f9-bb00-c66b661bf6eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lectures/part2op/package.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/playground/cinderalla.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2op/Exceptions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2op/Exceptions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2op/PackagingAndImports.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2op/PackagingAndImports.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part3fp/WhatsAFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part3fp/WhatsAFunction.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +16,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Exceptions">
+  <component name="RunManager" selected="Application.WhatsAFunction">
     <configuration name="AnonymousClasses" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part2op.AnonymousClasses" />
       <module name="rock-the-jvm-scala-beginners" />
@@ -81,19 +91,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Generics" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2op.Generics" />
-      <module name="rock-the-jvm-scala-beginners" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part2op.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ListTest2 (1)" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="exercises.ListTest2" />
       <module name="rock-the-jvm-scala-beginners" />
@@ -107,13 +104,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WhatsAFunction" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.WhatsAFunction" />
+      <module name="rock-the-jvm-scala-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part3fp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WhatsAFunction" />
         <item itemvalue="Application.Exceptions" />
         <item itemvalue="Application.CaseClasses" />
         <item itemvalue="Application.ListTest2 (1)" />
         <item itemvalue="Application.AnonymousClasses" />
-        <item itemvalue="Application.Generics" />
       </list>
     </recent_temporary>
   </component>
