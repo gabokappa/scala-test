@@ -8,7 +8,7 @@ object Generics extends App {
     // val listOfIntegers = new MyList[Int]
     // this is a generic class. We can also have a generic trait, but these can't be instantiated
     def add[B >: A](element: B): MyList[B] = ???
-    // the above says if to a list of As I put in a list of Bs which is a super type of A, then this lisrt turns into a list of Bs
+    // the above says if to a list of As I put in a list of Bs which is a super type of A, then this list turns into a list of Bs
 
     /* A = Cat
        B = Animal
