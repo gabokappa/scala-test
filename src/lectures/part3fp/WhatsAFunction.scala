@@ -43,6 +43,24 @@ println(stringToIntConverter("3") + 4)
   println(conca("Hell", " is here!"))
 
 
+  // Function1[Int, Function1[Int, Int]]
+
+  val superAdder: (Int) => ((Int) => Int) = (x: Int) => (y: Int) => x + y
+
+  /*
+  The ABOVE IS THE SAME AS BELOW
+   val superAdder: Function1[Int, Function1[Int, Int]] = new Function1[Int, Function1[Int, Int]] {
+    override def apply(x: Int): Function1[Int, Int] = new Function1[Int, Int] {
+      override def apply(y: Int): Int = x + y
+    }
+  }
+   */
+  val adder3 = superAdder(3)
+  // this returns 7
+  println(adder3(4))
+
+  println(superAdder(3)(4)) // curried function
+
 }
 
 // OOP below
