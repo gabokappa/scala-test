@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1f0c67e-23db-43f9-bb00-c66b661bf6eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/MyList2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/MyList2.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lectures/part3fp/HOFsCurries.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part3fp/HOFsCurries.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +50,7 @@
       <recent name="exercises" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HOFsCurries">
+  <component name="RunManager" selected="Application.ListTest2 (1)">
     <configuration name="AnonymousFunctions" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part3fp.AnonymousFunctions" />
       <module name="rock-the-jvm-scala-beginners" />
@@ -117,10 +118,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListTest2 (1)" />
         <item itemvalue="Application.HOFsCurries" />
         <item itemvalue="Application.AnonymousFunctions" />
         <item itemvalue="Application.Exceptions" />
-        <item itemvalue="Application.ListTest2 (1)" />
         <item itemvalue="Application.WhatsAFunction" />
       </list>
     </recent_temporary>
@@ -148,7 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576496831252</updated>
       <workItem from="1579517783402" duration="3898000" />
-      <workItem from="1579525504457" duration="1704000" />
+      <workItem from="1579525504457" duration="6147000" />
     </task>
     <servers />
   </component>
@@ -177,28 +178,28 @@
       <screen x="-76" y="-1057" width="1920" height="1057" />
     </state>
     <state x="619" y="-632" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517842982" />
-    <state width="1579" height="252" key="GridCell.Tab.0.bottom" timestamp="1579527081302">
+    <state width="1579" height="252" key="GridCell.Tab.0.bottom" timestamp="1579530509948">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="252" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579527081302" />
+    <state width="1579" height="252" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579530509948" />
     <state width="1538" height="254" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876261" />
     <state width="1579" height="254" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579518653090" />
-    <state width="1579" height="252" key="GridCell.Tab.0.center" timestamp="1579527081301">
+    <state width="1579" height="252" key="GridCell.Tab.0.center" timestamp="1579530509947">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="252" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579527081301" />
+    <state width="1579" height="252" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579530509947" />
     <state width="1538" height="254" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876259" />
     <state width="1579" height="254" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579518653089" />
-    <state width="1579" height="252" key="GridCell.Tab.0.left" timestamp="1579527081300">
+    <state width="1579" height="252" key="GridCell.Tab.0.left" timestamp="1579530509946">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="252" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579527081300" />
+    <state width="1579" height="252" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579530509946" />
     <state width="1538" height="254" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876259" />
     <state width="1579" height="254" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579518653089" />
-    <state width="1579" height="252" key="GridCell.Tab.0.right" timestamp="1579527081301">
+    <state width="1579" height="252" key="GridCell.Tab.0.right" timestamp="1579530509947">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="252" key="GridCell.Tab.0.right/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579527081301" />
+    <state width="1579" height="252" key="GridCell.Tab.0.right/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579530509947" />
     <state width="1538" height="254" key="GridCell.Tab.0.right/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876260" />
     <state width="1579" height="254" key="GridCell.Tab.0.right/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579518653090" />
     <state x="535" y="323" key="com.intellij.ide.util.TipDialog" timestamp="1579525507555">

@@ -28,6 +28,12 @@ abstract class MyList2[+A] {
   def filter(predicate: A => Boolean): MyList2[A]
   def ++[B >: A](list: MyList2[B]): MyList2[B]
 
+  // hofs
+
+  def foreach(f: A => Unit): Unit
+
+
+
 
 }
 
@@ -43,6 +49,10 @@ object Empty extends MyList2[Nothing] {
   def flatMap[B](transformer: Nothing => MyList2[B]): MyList2[B] = Empty
   def filter(predicate: Nothing => Boolean): MyList2[Nothing] = Empty
   def ++[B >: Nothing](list: MyList2[B]): MyList2[B] = list
+
+  // hofs
+
+  def foreach(f: Nothing => Unit): Unit = () // the () is the unit value
 
 }
 
@@ -111,6 +121,10 @@ def flatMap[B](transformer: A => MyList2[B]): MyList2[B] =
 
   def ++[B >: A](list: MyList2[B]): MyList2[B] = new exercises.Cons(h, t ++ list)
 
+  def foreach(f: A => Unit): Unit = {
+    f(h) // As Cons has a h as the head of the list, this applies the function to the 0 element in that list. i.e the head
+    t.foreach(f) // this takes the tail list and applies foreach which in turn applies function f to each element in the list
+  }
 
 }
 // these are basically function types
@@ -121,6 +135,7 @@ def flatMap[B](transformer: A => MyList2[B]): MyList2[B] =
 //trait MyTransformer[-A, B] { // A => B
 //  def transform(elem: A): B
 //}
+
 
 
 
@@ -137,10 +152,13 @@ object ListTest2 extends App {
   val listOfStrings10: MyList2[String] = Empty
 
   val listOfIntegers: MyList2[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
+  val cloneListOfIntegers: MyList2[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
+  val anotherListOfIntegers: MyList2[Int] = new Cons(4, new Cons(5, new Cons(6, Empty)))
   val listOfStrings: MyList2[String] = new Cons("Hello", new Cons("Scala", Empty))
 
   println(listOfIntegers.toString)
   println(listOfStrings.toString)
+  println(listOfIntegers == cloneListOfIntegers)
 
 
 
