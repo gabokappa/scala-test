@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1f0c67e-23db-43f9-bb00-c66b661bf6eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rock-the-jvm-scala-beginners.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rock-the-jvm-scala-beginners.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lectures/part3fp/HOFsCurries.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part3fp/HOFsCurries.scala" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +14,11 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,25 +34,22 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1V3zzn5aFP23mRqfd6oX9BYriG9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="exercises" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.HOFsCurries">
     <configuration name="AnonymousFunctions" type="Application" factoryName="Application" temporary="true">
@@ -118,11 +121,23 @@
       <list>
         <item itemvalue="Application.HOFsCurries" />
         <item itemvalue="Application.AnonymousFunctions" />
+        <item itemvalue="Application.Exceptions" />
         <item itemvalue="Application.ListTest2 (1)" />
         <item itemvalue="Application.WhatsAFunction" />
-        <item itemvalue="Application.Exceptions" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -134,8 +149,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576496831252</updated>
+      <workItem from="1579517783402" duration="3677000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -149,5 +168,35 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="522" y="-618" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1579517830959">
+      <screen x="-76" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="522" y="-618" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517830959" />
+    <state x="619" y="-632" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579517842982">
+      <screen x="-76" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="619" y="-632" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517842982" />
+    <state width="1579" height="254" key="GridCell.Tab.0.bottom" timestamp="1579518653090">
+      <screen x="0" y="23" width="1680" height="956" />
+    </state>
+    <state width="1538" height="254" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876261" />
+    <state width="1579" height="254" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579518653090" />
+    <state width="1579" height="254" key="GridCell.Tab.0.center" timestamp="1579518653089">
+      <screen x="0" y="23" width="1680" height="956" />
+    </state>
+    <state width="1538" height="254" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876259" />
+    <state width="1579" height="254" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579518653089" />
+    <state width="1579" height="254" key="GridCell.Tab.0.left" timestamp="1579518653089">
+      <screen x="0" y="23" width="1680" height="956" />
+    </state>
+    <state width="1538" height="254" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876259" />
+    <state width="1579" height="254" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579518653089" />
+    <state width="1579" height="254" key="GridCell.Tab.0.right" timestamp="1579518653090">
+      <screen x="0" y="23" width="1680" height="956" />
+    </state>
+    <state width="1538" height="254" key="GridCell.Tab.0.right/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876260" />
+    <state width="1579" height="254" key="GridCell.Tab.0.right/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579518653090" />
   </component>
 </project>
