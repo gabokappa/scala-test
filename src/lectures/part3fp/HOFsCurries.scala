@@ -42,9 +42,16 @@ def nTimesBetter(f: Int => Int, n: Int): (Int => Int) =
   The above then becomes -
   plus10(1)
   because n is 10 then it goes to the else statement in nTimesBetter
-  nTimesBetter(plusOne, 10)(plusOne(1) // the 1 here passed initially by plus10 // This line will recurr until 10 is 0
-
-
+  nTimesBetter(plusOne, 10)(plusOne(1) // the 1 here passed initially by plus10 // This line will recurr until n is 0
+  nTimesBetter(plusOne, 9)(plusOne(2))
+  nTimesBetter(plusOne, 8)(plusOne(3))
+  nTimesBetter(plusOne, 7)(plusOne(4))
+  nTimesBetter(plusOne, 6)(plusOne(5))
+  nTimesBetter(plusOne, 5)(plusOne(6))
+  nTimesBetter(plusOne, 4)(plusOne(7))
+  nTimesBetter(plusOne, 3)(plusOne(8))
+  nTimesBetter(plusOne, 2)(plusOne(9))
+  nTimesBetter(plusOne, 1)(plusOne(10))
 
 
    */
@@ -53,5 +60,27 @@ def nTimesBetter(f: Int => Int, n: Int): (Int => Int) =
   val superAdder: Int => (Int => Int) = (x: Int) => (y: Int) => x + y
   val add3 = superAdder(3) // y => 3 + y
   println(add3(10))
+  // can call superAdder directly passing the two parameter lists. I supplied the different lists
+  println(s"passing 2 parameter lists ${superAdder(3)(10)}")
+
+  // functions with multiple parameter lists. Below I define a function with multiple parameter lists
+
+  def curriedFormatter(c: String)(x: Double): String = c.format(x)
+
+  val standardFormat: (Double => String) = curriedFormatter("%4.2f")
+  val preciseFormat: (Double => String) = curriedFormatter("%10.8f")
+
+  println(standardFormat(Math.PI))
+  println(preciseFormat(Math.PI))
+
+  // To NOTE, for functions with multiple parameter lists, if you want to define smaller function later you have to define their type
+  // like we did in the val standardFormat and preciseFormat.
+
+  // functional programming is passing functions as parameters, which return functions as results
+
+  // currying is functions with multiple parameter lists
+
+
+
 
 }
