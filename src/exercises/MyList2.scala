@@ -31,6 +31,10 @@ abstract class MyList2[+A] {
   // hofs
 
   def foreach(f: A => Unit): Unit
+  def sort(compare: (A, A) => Int): MyList2[A] // For every two elements this will return a negative value if the first is "less" than second and a positive is the first is more than the second
+  def zipWith[B, C](list: MyList2[B], zip: (A, B) => C): MyList2[C] // this would throw an exception if the lists have different lengths. So the lists that are zipped have to be the same length
+  def fold[B](start: B)(operator: (B, A) => B): B
+
 
 
 
@@ -53,6 +57,12 @@ object Empty extends MyList2[Nothing] {
   // hofs
 
   def foreach(f: Nothing => Unit): Unit = () // the () is the unit value
+  def sort(compare: (Nothing, Nothing) => Int) = Empty
+  def zipWith[B, C](list: MyList2[B], zip: (Nothing, B) => C): MyList2[C] =
+    if(!list.isEmpty) throw new RuntimeException("Lists do not have the same length")
+    else Empty
+
+  def fold[B](start: B)(operator: (B, Nothing) => B): B = start
 
 }
 
@@ -126,6 +136,41 @@ def flatMap[B](transformer: A => MyList2[B]): MyList2[B] =
     t.foreach(f) // this takes the tail list and applies foreach which in turn applies function f to each element in the list
   }
 
+  def sort(compare: (A, A) => Int): MyList2[A] = {
+    def insert(x: A, sortedList: MyList2[A]): MyList2[A] =
+      if (sortedList.isEmpty) new Cons(x, Empty)
+      else if (compare(x, sortedList.head) <= 0) new Cons(x, sortedList) // For every two elements this will return a negative value if the first is "less" than second and a positive is the first is more than the second
+      else new Cons(sortedList.head, insert(x, sortedList.tail))
+
+    val sortedTail = t.sort(compare)
+    insert(h, sortedTail)
+  }
+
+  def zipWith[B, C](list: MyList2[B], zip: (A, B) => C): MyList2[C] =
+    if (list.isEmpty) throw new RuntimeException("Lists do not have the same length")
+    else new Cons(zip(h, list.head), t.zipWith(list.tail, zip))
+
+
+  /*
+  Explanation of fold
+
+  if a list [123] and you call fold with a 0 start and a + operator
+  [1,2,3].fold(0)(+) =
+  = [2, 3].fold(+(0, 1)(+) //  the start: for the fold called on [1,2,3] above is the operator adding the 0 and the head which is 1
+  = [2, 3].fold(1)(+) =
+  = [3].fold(3)(+) =
+  [].fold(6)(+)
+   */
+
+
+  def fold[B](start: B)(operator: (B, A) => B): B = {
+    t.fold(operator(start, h))(operator)
+    // the line above could be expressed in two separete sections as below.
+    //    val newStart = operator(start, h)
+//    t.fold(newStart)(operator)
+  }
+
+
 }
 // these are basically function types
 //trait MyPredicate[-T] { // this is T => Boolean
@@ -153,7 +198,7 @@ object ListTest2 extends App {
 
   val listOfIntegers: MyList2[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
   val cloneListOfIntegers: MyList2[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
-  val anotherListOfIntegers: MyList2[Int] = new Cons(4, new Cons(5, new Cons(6, Empty)))
+  val anotherListOfIntegers: MyList2[Int] = new Cons(4, new Cons(5, Empty))
   val listOfStrings: MyList2[String] = new Cons("Hello", new Cons("Scala", Empty))
 
   println(listOfIntegers.toString)
@@ -184,5 +229,19 @@ object ListTest2 extends App {
   }).toString)
 
   println(s"Using lambda ${listOfIntegers.flatMap(elem => new Cons(elem, new Cons(elem + 1, Empty))).toString}")
+
+  listOfIntegers.foreach(println) // this could also be listOfIntegers.foreach(x => println)
+
+  println("Testing sorting below")
+  println(listOfIntegers.sort((x, y) => y - x))
+  println("Testing zipping below")
+  println(anotherListOfIntegers.zipWith[String, String](listOfStrings, _ + "-" + _))
+
+  println(listOfIntegers.fold(0)(_+_)) // TODO folding is a good way to collapse values into one int, often referred to as reduce
+
+
+//  def zipWith[B, C](list: MyList2[B], zip: (A, B) => C): MyList2[C] =
+//    if (list.isEmpty) throw new RuntimeException("Lists do not have the same length")
+//    else new Cons(zip(h, list.head), t.zipWith(list.tail, zip))
 
 }

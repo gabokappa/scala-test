@@ -110,5 +110,32 @@ andThen(g,g) => x => g(f(x)) this version applies 'f' first then x.
 
  */
 
+  // section 2
+
+  // toCurry takes a function which has two Int params and returns an Int and it returns an Int function that returns another Int functions which returns and Int
+  def toCurry(f:(Int, Int) => Int): (Int => Int => Int) =
+    x => y => (f(x, y))
+
+  def fromCurry(f: (Int => Int => Int)): (Int, Int) => Int =
+    (x, y) => f(x)(y)
+
+  //FunctionX
+
+  /* ORIGINAL
+  def compose(f: Int => Int, g: Int => Int): Int => Int =
+    x => f(g(x))
+
+   */
+
+  def compose[A, B, T](f: A => B, g: T => A): T => B =
+    x => f(g(x))
+
+  def andThen(f: Int => Int, g: Int => Int): Int => Int =
+    x => g(f(x))
+
+  def superAdder2: (Int => Int => Int) = toCurry((_  + _))
+
+  def add4 = superAdder2(4)
+  println(add4(17))
 
 }
