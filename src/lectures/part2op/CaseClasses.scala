@@ -11,15 +11,18 @@ object CaseClasses extends App {
 
   // 2. sensible toString
   //println(instance) == println(instance.toString)
+  println("Sensible to string below")
   println(jim.toString)
 
   // 3. equals and hashcode impelmented out of the box
   val jim2 = new Person("Jim", 34)
   println(jim == jim2)
+  println(s"printing hashcode ${jim.hashCode()} and ${jim2.hashCode()}")
 
   // 4. CCs have handy copy method
   val jim3 = jim.copy(age = 45)
   println(jim3)
+  println(jim)
 
 // 5. Case classes have companion objects. By using case infront of e class automatically creates a companion object
   // Don't really need to use 'new' when instantiating a case class, can use the apply method () like when mary val is called below
@@ -34,5 +37,7 @@ object CaseClasses extends App {
   case object UnitedKingdom {
     def name: String = "The Uk of GB and NI"
   }
+
+
 
 }

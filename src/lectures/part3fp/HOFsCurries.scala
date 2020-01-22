@@ -119,7 +119,7 @@ andThen(g,g) => x => g(f(x)) this version applies 'f' first then x.
   def fromCurry(f: (Int => Int => Int)): (Int, Int) => Int =
     (x, y) => f(x)(y)
 
-  //FunctionX
+  // Look up the documentation for FunctionX
 
   /* ORIGINAL
   def compose(f: Int => Int, g: Int => Int): Int => Int =
@@ -137,5 +137,18 @@ andThen(g,g) => x => g(f(x)) this version applies 'f' first then x.
 
   def add4 = superAdder2(4)
   println(add4(17))
+
+  val simpleAdder = fromCurry(superAdder)
+  println(simpleAdder(4, 17))
+
+  val add2 = (x: Int) => x + 2
+
+  val times3 = (x: Int) => x * 3
+
+  val composed = compose(add2, times3)
+  val ordered = andThen(add2, times3)
+
+  println(composed(4)) // applies times3 to 4 first so that is 12. And then the result of that function you add2 which is 14
+  println(ordered(4)) // applies this in order so add2 is applied to so it becomes 6 and it times by 3 is 18.
 
 }
