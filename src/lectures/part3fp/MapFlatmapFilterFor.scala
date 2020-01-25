@@ -19,7 +19,7 @@ object MapFlatmapFilterFor extends App {
   //flatMap
 
   val toPair = (x: Int) => List(x, x + 1)
-  println(s"flat mapping the ${list.flatMap(toPair)}")
+  println(s"flat mapping with a to pair ${list.flatMap(toPair)}")
 
   val numbers = List(1, 2, 3, 4)
   val chars = List('a', 'b', 'c', 'd')
@@ -29,13 +29,13 @@ object MapFlatmapFilterFor extends App {
   println(combinations)
 
   // "How to do iterations"
-  val combinations2 = numbers.flatMap(n => chars.flatMap(c => colors.map(color => "" + c + n + "-" + color)))
+  val combinations2 = numbers.flatMap(n => chars.flatMap(c => colors.map(colour => "" + c + n + "-" + colour)))
 println(combinations2)
 
 // foreach
   list.foreach(println)
 
-  // the foreach above is idential to this:
+  // the foreach above is identical to this:
 
 //  for {
 //    n <- numbers
@@ -58,12 +58,16 @@ println(combinations2)
   }
 
   /*
-  MyList supports for comprehensions?
+  1) MyList supports for comprehensions? for these to work in MyList2, flayMap and map need to have a special signature as below.
   map(f: A => B) => MyList[B]
   filter(p: A => Boolean) => MyList[A]
   flatMap(f: A => MyList[B] => MyList[B]
 
-a small collection of at most ONE element - Maybe[+T]
+2) a small collection of at most ONE element - Maybe[+T]
+    -map, flatMap, filter, filter
+
+
+ Maybe in functional programming denotes optional values.
 
    */
 

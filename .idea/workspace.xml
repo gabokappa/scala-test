@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1f0c67e-23db-43f9-bb00-c66b661bf6eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/exercises/Maybe.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/part3fp/Sequences.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part2op/CaseClasses$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part2op/CaseClasses$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part2op/CaseClasses$UnitedKingdom$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part2op/CaseClasses$UnitedKingdom$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2op/CaseClasses.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2op/CaseClasses.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part3fp/HOFsCurries.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part3fp/HOFsCurries.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/ListTest2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/ListTest2$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/ListTest2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/ListTest2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/part2ex/Just$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/part2ex/Just.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/part2ex/Maybe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/part2ex/MaybeNot$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/part2ex/MaybeNot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/part2ex/MaybeTest$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/part2ex/MaybeTest$delayedInit$body.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/exercises/part2ex/MaybeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part3fp/MapFlatmapFilterFor$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part3fp/MapFlatmapFilterFor$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/MyList2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/MyList2.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/part2ex/Maybe.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/part2ex/Maybe.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part3fp/MapFlatmapFilterFor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part3fp/MapFlatmapFilterFor.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,46 +64,7 @@
       <recent name="exercises" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HOFsCurries">
-    <configuration name="AnonymousFunctions" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.AnonymousFunctions" />
-      <module name="rock-the-jvm-scala-beginners" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part3fp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CaseClasses" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2op.CaseClasses" />
-      <module name="rock-the-jvm-scala-beginners" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part2op.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exceptions" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2op.Exceptions" />
-      <module name="rock-the-jvm-scala-beginners" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part2op.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Sequences">
     <configuration name="HOFsCurries" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part3fp.HOFsCurries" />
       <module name="rock-the-jvm-scala-beginners" />
@@ -118,13 +91,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MapFlatmapFilterFor" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.MapFlatmapFilterFor" />
+      <module name="rock-the-jvm-scala-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part3fp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaybeTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.MaybeTest" />
+      <module name="rock-the-jvm-scala-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sequences" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.Sequences" />
+      <module name="rock-the-jvm-scala-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part3fp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HOFsCurries" />
-        <item itemvalue="Application.CaseClasses" />
+        <item itemvalue="Application.Sequences" />
+        <item itemvalue="Application.MaybeTest" />
         <item itemvalue="Application.ListTest2 (1)" />
-        <item itemvalue="Application.AnonymousFunctions" />
-        <item itemvalue="Application.Exceptions" />
+        <item itemvalue="Application.MapFlatmapFilterFor" />
+        <item itemvalue="Application.HOFsCurries" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +166,7 @@
       <workItem from="1579525504457" duration="6356000" />
       <workItem from="1579551007852" duration="10488000" />
       <workItem from="1579625790931" duration="1457000" />
-      <workItem from="1579688169632" duration="2204000" />
+      <workItem from="1579688169632" duration="20945000" />
     </task>
     <servers />
   </component>
@@ -183,38 +195,46 @@
       <screen x="-76" y="-1057" width="1920" height="1057" />
     </state>
     <state x="619" y="-632" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517842982" />
-    <state width="1579" height="139" key="GridCell.Tab.0.bottom" timestamp="1579690064111">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1579" height="264" key="GridCell.Tab.0.bottom" timestamp="1579949844708">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="139" key="GridCell.Tab.0.bottom/-104.-1057.1920.982/0.23.1680.1027@0.23.1680.1027" timestamp="1579690064111" />
-    <state width="1579" height="101" key="GridCell.Tab.0.bottom/-123.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579554784722" />
+    <state width="1579" height="264" key="GridCell.Tab.0.bottom/-104.-1057.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1579710741757" />
+    <state width="1579" height="264" key="GridCell.Tab.0.bottom/-104.-1057.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1579710803191" />
+    <state width="1579" height="139" key="GridCell.Tab.0.bottom/-104.-1057.1920.982/0.23.1680.1027@0.23.1680.1027" timestamp="1579690618265" />
+    <state width="1579" height="264" key="GridCell.Tab.0.bottom/-123.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579949844708" />
     <state width="1579" height="138" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.954@-76.-1057.1920.1057" timestamp="1579627251447" />
     <state width="1579" height="101" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579602475945" />
     <state width="1538" height="254" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876261" />
     <state width="1579" height="101" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579625082797" />
-    <state width="1579" height="139" key="GridCell.Tab.0.center" timestamp="1579690064110">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1579" height="264" key="GridCell.Tab.0.center" timestamp="1579949844707">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="139" key="GridCell.Tab.0.center/-104.-1057.1920.982/0.23.1680.1027@0.23.1680.1027" timestamp="1579690064110" />
-    <state width="1579" height="101" key="GridCell.Tab.0.center/-123.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579554784721" />
+    <state width="1579" height="264" key="GridCell.Tab.0.center/-104.-1057.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1579710741756" />
+    <state width="1579" height="264" key="GridCell.Tab.0.center/-104.-1057.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1579710803190" />
+    <state width="1579" height="139" key="GridCell.Tab.0.center/-104.-1057.1920.982/0.23.1680.1027@0.23.1680.1027" timestamp="1579690618265" />
+    <state width="1579" height="264" key="GridCell.Tab.0.center/-123.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579949844707" />
     <state width="1579" height="138" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.954@-76.-1057.1920.1057" timestamp="1579627251447" />
     <state width="1579" height="101" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579602475944" />
     <state width="1538" height="254" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876259" />
     <state width="1579" height="101" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579625082796" />
-    <state width="1579" height="139" key="GridCell.Tab.0.left" timestamp="1579690064109">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1579" height="264" key="GridCell.Tab.0.left" timestamp="1579949844706">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="139" key="GridCell.Tab.0.left/-104.-1057.1920.982/0.23.1680.1027@0.23.1680.1027" timestamp="1579690064109" />
-    <state width="1579" height="101" key="GridCell.Tab.0.left/-123.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579554784721" />
+    <state width="1579" height="264" key="GridCell.Tab.0.left/-104.-1057.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1579710741755" />
+    <state width="1579" height="264" key="GridCell.Tab.0.left/-104.-1057.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1579710803189" />
+    <state width="1579" height="139" key="GridCell.Tab.0.left/-104.-1057.1920.982/0.23.1680.1027@0.23.1680.1027" timestamp="1579690618264" />
+    <state width="1579" height="264" key="GridCell.Tab.0.left/-123.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579949844706" />
     <state width="1579" height="138" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.954@-76.-1057.1920.1057" timestamp="1579627251446" />
     <state width="1579" height="101" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579602475944" />
     <state width="1538" height="254" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876259" />
     <state width="1579" height="101" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579625082795" />
-    <state width="1579" height="139" key="GridCell.Tab.0.right" timestamp="1579690064110">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1579" height="264" key="GridCell.Tab.0.right" timestamp="1579949844707">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="139" key="GridCell.Tab.0.right/-104.-1057.1920.982/0.23.1680.1027@0.23.1680.1027" timestamp="1579690064110" />
-    <state width="1579" height="101" key="GridCell.Tab.0.right/-123.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579554784722" />
+    <state width="1579" height="264" key="GridCell.Tab.0.right/-104.-1057.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1579710741757" />
+    <state width="1579" height="264" key="GridCell.Tab.0.right/-104.-1057.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1579710803190" />
+    <state width="1579" height="139" key="GridCell.Tab.0.right/-104.-1057.1920.982/0.23.1680.1027@0.23.1680.1027" timestamp="1579690618265" />
+    <state width="1579" height="264" key="GridCell.Tab.0.right/-123.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579949844707" />
     <state width="1579" height="138" key="GridCell.Tab.0.right/-76.-1057.1920.1057/0.23.1680.954@-76.-1057.1920.1057" timestamp="1579627251447" />
     <state width="1579" height="101" key="GridCell.Tab.0.right/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579602475945" />
     <state width="1538" height="254" key="GridCell.Tab.0.right/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876260" />
@@ -223,10 +243,11 @@
       <screen x="0" y="23" width="1680" height="954" />
     </state>
     <state x="535" y="323" key="com.intellij.ide.util.TipDialog/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579525507555" />
-    <state x="440" y="82" width="838" height="890" key="find.popup" timestamp="1579689273517">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="440" y="78" width="838" height="827" key="find.popup" timestamp="1579949507522">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
     <state x="440" y="82" width="838" height="890" key="find.popup/-104.-1057.1920.980/0.23.1680.1027@0.23.1680.1027" timestamp="1579689273517" />
+    <state x="440" y="78" width="838" height="827" key="find.popup/-123.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579949507522" />
     <state x="427" y="-996" width="957" height="915" key="find.popup/-76.-1057.1920.1057/0.23.1680.954@-76.-1057.1920.1057" timestamp="1579626034534" />
     <state x="440" y="78" width="837" height="825" key="find.popup/-76.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1579599642165" />
   </component>

@@ -244,4 +244,12 @@ object ListTest2 extends App {
 //    if (list.isEmpty) throw new RuntimeException("Lists do not have the same length")
 //    else new Cons(zip(h, list.head), t.zipWith(list.tail, zip))
 
+  // TODO testing the use of  for comprehensions with flatMap, map and filter.
+
+    val myCombinations = for {
+      n <- listOfIntegers
+      string <- listOfStrings
+    } yield n + "-" + string
+
+   println(myCombinations)
 }
