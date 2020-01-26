@@ -1,5 +1,7 @@
 package lectures.part3fp
 
+import java.nio.channels.NetworkChannel
+
 object TuplesAndMaps extends App {
 
   // tuples are finite orderered "lists
@@ -8,7 +10,7 @@ object TuplesAndMaps extends App {
   val aTuple3 = (2, "Hello, Scala") // all these versions are different declarations of the same thing. a two type tuple or Tuple2
 
   println(aTuple._1)
-  println(aTuple.copy(_2 = "goodbye java")) // same stylw with case classes
+  println(aTuple.copy(_2 = "goodbye java")) // same style with case classes
   println(aTuple.swap) // this swaps the order of the elements
 
   // Maps
@@ -67,5 +69,120 @@ object TuplesAndMaps extends App {
   val names = List("Bob", "Gabriel", "Barry", "Garry", "Andy")
   println(names.groupBy(name => name.charAt(0)))
 
+  /*
+  1. What would happen if there were two original entries "Jim" -> 555 and "JIM" -> 900? // it prints/ picks the last mention
+  2. Social network based on maps
+  - add a person to the network
+  - remove a person
+  - friend (mutual)
+  - unfriend
+
+  - number of friends of a person
+  - how many people have NO friends
+  - if there is a social connection between two people(direct or not)
+   */
+
+  val duplicates = Map(("Jim", 555), ("JIM", 789))
+
+  println(duplicates.map(pair => pair._1.toLowerCase -> pair._2))
+
+  def add(network: Map[String, Set[String]], person: String): Map[String, Set[String]] =
+    network + (person -> Set())
+
+  def friend(network: Map[String, Set[String]], a: String, b: String): Map[String, Set[String]] = {
+    val friendsA = network(a)
+    val friendsB = network(b)
+
+    network + (a -> (friendsA + b)) + (b -> (friendsB + a))
+    // the new pairing created here replace the existing pairings if there was one.
+  }
+
+  def unfriend(network: Map[String, Set[String]], a: String, b: String): Map[String, Set[String]] = {
+    val friendsA = network(a)
+    val friendsB = network(b)
+
+    network + (a -> (friendsA - b)) + (b -> (friendsB - a))
+  }
+
+  def remove(network: Map[String, Set[String]], person: String): Map[String, Set[String]] = {
+  // Cannot just remove the key from the network Map, because that person's friends will have a key in their friends list that will be no longer existant.
+    // new auxillary methods below
+    def removeAux(friends: Set[String], networkAcc: Map[String, Set[String]]): Map[String, Set[String]] =
+      if (friends.isEmpty) networkAcc
+      else removeAux(friends.tail, unfriend(networkAcc, person, friends.head))
+
+    val unfriended = removeAux(network(person), network)
+    unfriended - person
+    // at this point, unfriended has removed the friends list from the key the key can be simply removed form the network
+  }
+
+  val empty: Map[String, Set[String]] = Map()
+  val network = add(add(empty, "Bob"), "Mary")
+  println(s"This network $network")
+
+  println(friend(network, "Bob", "Mary"))
+  val friendedNet = friend(network, "Bob", "Mary")
+
+  println(unfriend(friend(network, "Bob", "Mary"), "Bob", "Mary"))
+  println(unfriend(friendedNet, "Bob", "Mary"))
+
+  println(network)
+
+  println(remove(friendedNet, "Bob"))
+
+  // Jim, Bob, Mary
+
+  val people = add(add(add(empty, "Bob"), "Mary"), "Jim")
+  val jimBob = friend(people, "Bob", "Jim")
+  val testNet = friend(jimBob, "Mary", "Bob")
+
+  println(s"Printing our test network: $testNet")
+
+  def nFriends(network: Map[String, Set[String]], person: String): Int =
+    if (!network.contains(person)) 0
+    else (network(person).size)
+
+  println(nFriends(testNet, "Bob"))
+
+  def mostFriends(network: Map[String, Set[String]]): String =
+    network.maxBy(pair => pair._2.size)._1
+
+  // In the above line, we call the method maxBy on the map. maxBy receives a lambda from the pairing to a value. The value has to be comparable.
+  // so for each key value pair in the map, we return the size of the value of the key. So the size of the Set per key, i.e the size of friends in the set.
+  // as we're calling the maxBy, it returns the pairing in other words the key value pair that has the largest number/size
+  // and we ask to return the first element ._1 i.e the key of that pair to get the name of the person with most friends
+
+
+  println(mostFriends(testNet))
+
+  def nPeopleWithNoFriends(network: Map[String, Set[String]]): Int =
+    // another way of doing this would be:
+    // TODO one way to do this: network.filter(pair => pair._2.isEmpty).size
+    // in the above, we filter for each pair, and for each pair check if the value of that pair is empty, then return size so the number of the pairs that match that filter
+    network.filterKeys(k => network(k).isEmpty).size
+  // call .filterKeys on the network which will filter through the keys whose friends list is empty.
+  // the network(k) returns the value, so the set of friends for that person aka key. The size methods returns the numbers of pairings that fall under this mapping.
+  // TODO a short way to write this is network.count(pair => pair._2.isEmpty) // for every pairing test whether pair._2 is empty and then count how many answer true to that
+  // TODO an even SHORTER way to write this network.count(_._2.isEmpty. This is shorthand lambda syntax
+
+    println(nPeopleWithNoFriends(testNet))
+
+  def socialConnection(network: Map[String, Set[String]], a: String, b: String): Boolean = {
+    // bfs is breadth first search
+    // the below is can I find target in discovered people having already searched/ considered people  in considered people already
+    def bfs(target: String, consideredPeople: Set[String], discoveredPeople: Set[String]): Boolean ={
+      if(discoveredPeople.isEmpty) false
+      else {
+        val person = discoveredPeople.head
+        if  (person == target) true
+        else if(consideredPeople.contains(person)) bfs(target, consideredPeople, discoveredPeople.tail)
+        else bfs(target, consideredPeople + person, discoveredPeople.tail ++ network(person))
+      }
+    }
+    bfs(b, Set(), network(a) + a)
+  }
+
+  println(socialConnection(testNet, "Bob", "Mary"))
+  println(socialConnection(network, "Mary", "Bob")) // this returns false as there is no connection
 
 }
