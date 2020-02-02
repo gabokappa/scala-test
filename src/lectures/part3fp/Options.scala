@@ -9,10 +9,12 @@ object Options extends App {
 
   println(myFirstOption)
 
+  //Options was created for dealing with unsafe APIs
+
   def unsafeMethod(): String = null
 
   // Some should always have a valid value inside
-
+  val result1 = Some(null) // THIS IS WRONG, USE OPTION INSTEAD. Some needs to always have a valid value instead.
   val result = Option(unsafeMethod()) // The apply method from the companion object of Option creates a Some or None depending on whether the value inside the Option is null or not. he vlaue of unsafeMethod
 
   println(s"Printing the result $result")
@@ -70,6 +72,7 @@ object Options extends App {
   if (h !-null)
   if (p != null)
   return Connection.apply(h,p)
+  other wise return null
    */
 
   val connection = host.flatMap(h => port.flatMap(p => Connection.apply(h, p)))
@@ -81,7 +84,7 @@ object Options extends App {
    */
   val connectionStatus = connection.map(c => c.connect)
 
-  //print line says if (connectionStatus == null) print(none) else print (Some connectionstatus.get))
+  //print line says if (connectionStatus == null) print(none) else print (Some (connectionstatus.get))
   println(connectionStatus)
 
   /*
