@@ -34,7 +34,7 @@ object TuplesAndMaps extends App {
   // to avoid raising an exception and guard against errors you can apply a method that returns a default value if the key isn't found
 
   val phoneBook3 = Map("Jim" -> 555, "Daniel" -> 789).withDefaultValue(-1)
-  println(phoneBook3("Gabriel")) // this no longer raises an exception but returns a minues one
+  println(phoneBook3("Gabriel")) // this no longer raises an exception but returns a minus one
 
   // how to add a pairing
 
@@ -52,7 +52,7 @@ object TuplesAndMaps extends App {
   // pass a predicate through the filterKeys
 
   println(phoneBook.filterKeys(x => x.startsWith("D")))
-  // the above is the lambda syntax. These print only the keys that pass trhe predicate
+  // the above is the lambda syntax. These print only the keys that pass the predicate
   println(phoneBook.filterKeys(_.startsWith("J")))
 
 
