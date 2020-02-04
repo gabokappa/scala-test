@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1f0c67e-23db-43f9-bb00-c66b661bf6eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$Dog$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$Dog$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$Dog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$Parrot$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$Parrot$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$Parrot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching$Parrot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm-scala-beginners/lectures/part4pm/PatternMatching.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part4pm/PatternMatching.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part4pm/PatternMatching.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part4pm/AllThePatterns.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part4pm/AllThePatterns.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +49,39 @@
       <recent name="exercises" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PatternMatching">
+  <component name="RunManager" selected="Application.AllThePatterns">
+    <configuration name="AllThePatterns" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part4pm.AllThePatterns" />
+      <module name="rock-the-jvm-scala-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part4pm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HandlingFailure" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part3fp.HandlingFailure" />
       <module name="rock-the-jvm-scala-beginners" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lectures.part3fp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListTest2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.ListTest2" />
+      <module name="rock-the-jvm-scala-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercises.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,39 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sequences" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.Sequences" />
-      <module name="rock-the-jvm-scala-beginners" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part3fp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TuplesAndMaps" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.TuplesAndMaps" />
-      <module name="rock-the-jvm-scala-beginners" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part3fp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AllThePatterns" />
+        <item itemvalue="Application.ListTest2" />
         <item itemvalue="Application.PatternMatching" />
         <item itemvalue="Application.HandlingFailure" />
         <item itemvalue="Application.Options" />
-        <item itemvalue="Application.TuplesAndMaps" />
-        <item itemvalue="Application.Sequences" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +163,8 @@
       <workItem from="1580481507929" duration="1481000" />
       <workItem from="1580584347525" duration="18616000" />
       <workItem from="1580721115364" duration="5305000" />
-      <workItem from="1580761323700" duration="1950000" />
+      <workItem from="1580761323700" duration="7486000" />
+      <workItem from="1580817583093" duration="5767000" />
     </task>
     <servers />
   </component>
@@ -204,10 +198,10 @@
       <screen x="0" y="23" width="1680" height="956" />
     </state>
     <state x="379" y="116" key="CommitChangelistDialog2/-123.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1580634814326" />
-    <state width="1579" height="264" key="GridCell.Tab.0.bottom" timestamp="1580808957412">
+    <state width="1579" height="264" key="GridCell.Tab.0.bottom" timestamp="1580826780131">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="264" key="GridCell.Tab.0.bottom/-104.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1580808957412" />
+    <state width="1579" height="264" key="GridCell.Tab.0.bottom/-104.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1580826780131" />
     <state width="1579" height="264" key="GridCell.Tab.0.bottom/-104.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1580305478873" />
     <state width="1579" height="264" key="GridCell.Tab.0.bottom/-104.-1057.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1579710741757" />
     <state width="1579" height="264" key="GridCell.Tab.0.bottom/-104.-1057.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1579710803191" />
@@ -219,10 +213,10 @@
     <state width="1538" height="254" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876261" />
     <state width="1579" height="101" key="GridCell.Tab.0.bottom/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579625082797" />
     <state width="1579" height="264" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1580482990314" />
-    <state width="1579" height="264" key="GridCell.Tab.0.center" timestamp="1580808957411">
+    <state width="1579" height="264" key="GridCell.Tab.0.center" timestamp="1580826780129">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="264" key="GridCell.Tab.0.center/-104.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1580808957411" />
+    <state width="1579" height="264" key="GridCell.Tab.0.center/-104.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1580826780129" />
     <state width="1579" height="264" key="GridCell.Tab.0.center/-104.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1580305478873" />
     <state width="1579" height="264" key="GridCell.Tab.0.center/-104.-1057.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1579710741756" />
     <state width="1579" height="264" key="GridCell.Tab.0.center/-104.-1057.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1579710803190" />
@@ -234,10 +228,10 @@
     <state width="1538" height="254" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876259" />
     <state width="1579" height="101" key="GridCell.Tab.0.center/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579625082796" />
     <state width="1579" height="264" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1580482990313" />
-    <state width="1579" height="264" key="GridCell.Tab.0.left" timestamp="1580808957411">
+    <state width="1579" height="264" key="GridCell.Tab.0.left" timestamp="1580826780128">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="264" key="GridCell.Tab.0.left/-104.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1580808957411" />
+    <state width="1579" height="264" key="GridCell.Tab.0.left/-104.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1580826780128" />
     <state width="1579" height="264" key="GridCell.Tab.0.left/-104.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1580305478872" />
     <state width="1579" height="264" key="GridCell.Tab.0.left/-104.-1057.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1579710741755" />
     <state width="1579" height="264" key="GridCell.Tab.0.left/-104.-1057.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1579710803189" />
@@ -249,10 +243,10 @@
     <state width="1538" height="254" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.956@-76.-1057.1920.1057" timestamp="1579517876259" />
     <state width="1579" height="101" key="GridCell.Tab.0.left/-76.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1579625082795" />
     <state width="1579" height="264" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1580482990313" />
-    <state width="1579" height="264" key="GridCell.Tab.0.right" timestamp="1580808957412">
+    <state width="1579" height="264" key="GridCell.Tab.0.right" timestamp="1580826780130">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1579" height="264" key="GridCell.Tab.0.right/-104.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1580808957412" />
+    <state width="1579" height="264" key="GridCell.Tab.0.right/-104.-1057.1920.1057/0.23.1680.954@0.23.1680.954" timestamp="1580826780130" />
     <state width="1579" height="264" key="GridCell.Tab.0.right/-104.-1057.1920.1057/0.23.1680.956@0.23.1680.956" timestamp="1580305478873" />
     <state width="1579" height="264" key="GridCell.Tab.0.right/-104.-1057.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1579710741757" />
     <state width="1579" height="264" key="GridCell.Tab.0.right/-104.-1057.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1579710803190" />
